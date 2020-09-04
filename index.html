@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <script defer src="http://192.168.1.117:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        font-family: "Arial";
+    }
+
+    #message-container {
+        text-align: left;
+        width: 40%;
+        max-width: 600px;
+    }
+
+    #message-container div {
+        background-color: #CCC;
+        padding: 5px;
+    }
+
+    #message-container div:nth-child(2n) {
+        background-color: #FFF;
+    }
+
+    #send-container {
+        position: fixed;
+        text-align: left;
+        padding-bottom: 30px;
+        bottom: 0;
+        background-color: white;
+        max-width: 1200px;
+        width: 80%;
+        display: flex;
+    }
+
+    #message-input {
+        flex-grow: 1;
+    }
+      
+    #user-container {
+        width: 30%;
+        max-width: 400px;  
+        margin: 10px;
+    }
+    
+    #profile-container {
+        width: 10%
+        padding-bottom: 30px;
+        margin: 30px;
+    }
+      
+  </style>
+</head>
+<body>
+    <div id="message-container"><h1>Chat</h1></div>
+    <div id="user-container"><h3>Users Online</h3></div>
+    <div id="profile-container">Joined as: </div>
+  <form id="send-container">
+    <input type="text" id="message-input">
+    <button type="submit" id="send-button">Send</button>
+  </form>
+</body>
+</html>
