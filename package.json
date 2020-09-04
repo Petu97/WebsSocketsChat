@@ -2,12 +2,20 @@
   "name": "websocketschat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "devStart": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petu97/WebSocketsChat.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petu97/WebSocketsChat/issues"
+  },
+  "homepage": "https://github.com/Petu97/WebSocketsChat#readme",
   "dependencies": {
     "socket.io": "^2.3.0"
   },
