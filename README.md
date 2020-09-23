@@ -1,6 +1,6 @@
 # WebsSocketsChat
 
-This is a real time chat nodejs application. 
+This is a very simple real time chat nodejs application. 
 How to run:
   1. Download project
   2. Go to folders directory and run server.js
