@@ -5,6 +5,7 @@ I made this application to practice using socket.io as well as node for my bigge
 Tutorial used for this project: https://www.youtube.com/watch?v=rxzOqP9YwmM
 How to run:
   1. Download project
-  2. Go to folders directory and run server.js
-  3. Open index.html from the directory in web browser
-  4. User gives name to application and you're good to go
+  2. Go to directory and run npm install to dowload modules
+  3. Run server.js
+  4. Open index.html from the directory in web browser
+  5. User gives name to application and you're good to go
