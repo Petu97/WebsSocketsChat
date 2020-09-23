@@ -7,7 +7,6 @@ var userToRemove = "";
 io.on("connection", (socket) => {
   socket.on("new-user", (name) => {
     if (name == null || name == "") name = "anonymous";
-    console.log("user connected");
     users[socket.id] = name;
     userList.push(name);
     //These are ran for the client joining
